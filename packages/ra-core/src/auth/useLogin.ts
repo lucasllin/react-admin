@@ -18,7 +18,7 @@ import { useLocation, useHistory } from 'react-router-dom';
  * const LoginButton = () => {
  *     const [loading, setLoading] = useState(false);
  *     const login = useLogin();
- *     const handleClick = {
+ *     const handleClick = () => {
  *         setLoading(true);
  *         login({ username: 'john', password: 'p@ssw0rd' }, '/posts')
  *             .then(() => setLoading(false));
